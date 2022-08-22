@@ -11,15 +11,19 @@ namespace GitWork
     {
         public static int StepNum(int number,int stepen)
         {
-            int sum = Convert.ToInt32(Math.Pow(number, stepen));    //выводим  число указанного стпени в переменную
+            int sum = 1;
+            for (int i = 0; i < stepen; i++)
+                sum *= number;             //выводим  число указанного стпени в переменную
 
-            Console.WriteLine($"{number}^{stepen}= {sum}.");     //вывод в консоль
+            Console.WriteLine($"{number}^{stepen} = {sum}.");     //вывод в консоль
 
             return sum;
         }
         public static int KubNum(int number)
         {
-            int sum = Convert.ToInt32(Math.Pow(number, 3));
+            int sum = 1;
+            for (int i =0; i< 3;i++)
+                sum *= number;
 
             Console.WriteLine($"{number}^3 = {sum}");
 
