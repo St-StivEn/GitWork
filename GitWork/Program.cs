@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace GitWork
@@ -36,6 +37,8 @@ namespace GitWork
                 Console.WriteLine("Добро пожаловать");
                 Console.WriteLine("1. Возвести число в степень.");
                 Console.WriteLine("2. Возвести число в куб.");
+                Console.WriteLine("3. Выход.");
+
                 try
                 {
                     Console.Write("Выбирите действие : ");
@@ -76,6 +79,20 @@ namespace GitWork
                             {
                                 Console.WriteLine("Повторите ввод!");
                             }
+                        }
+                    }
+                    if(a == 3)
+                    {
+                        try
+                        {
+                            Console.WriteLine("GoodBuy");
+                            Thread.Sleep(2000);
+                            Environment.Exit(0);
+                            break;
+                        }
+                        catch
+                        {
+
                         }
                     }
                 }
