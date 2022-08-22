@@ -45,9 +45,10 @@ namespace GitWork
                             {
                                 Console.Write("1. Число : ");
                                 int number = int.Parse(Console.ReadLine());
-                                Console.WriteLine("2. Степень :");
+                                Console.Write("2. Степень :");
                                 int stepen = int.Parse(Console.ReadLine());
                                 StepNum(number, stepen);
+                                break;
                             }
                             catch
                             {
@@ -59,12 +60,13 @@ namespace GitWork
                     {
                         while (true)
                         {
-                            Console.WriteLine("Введите число :");
+                            Console.Write("Введите число :");
                             try
                             {
                                 int number = int.Parse(Console.ReadLine());
                                 
                                 KubNum(number);
+                                break;
                             }
                             catch
                             {
