@@ -17,6 +17,14 @@ namespace GitWork
 
             return sum;
         }
+        public static int KubNum(int number)
+        {
+            int sum = Convert.ToInt32(Math.Pow(number, 3));
+
+            Console.WriteLine($"{number}^3 = {sum}");
+
+            return sum;
+        }
         static void Main(string[] args)
         {
             while (true)
