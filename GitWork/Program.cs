@@ -64,7 +64,7 @@ namespace GitWork
                             {
                                 int number = int.Parse(Console.ReadLine());
                                 
-
+                                KubNum(number);
                             }
                             catch
                             {
