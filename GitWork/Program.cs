@@ -68,7 +68,7 @@ namespace GitWork
                             }
                             catch
                             {
-
+                                Console.WriteLine("Повторите ввод!");
                             }
                         }
                     }
